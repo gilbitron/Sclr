@@ -7,7 +7,7 @@ if (!function_exists('s')) {
 		$inst = null;
 
 		if (is_array($value)) {
-
+			$inst = new Sclr\SclrArray($value);
 		} elseif (is_object($value)) {
 
 		} elseif (is_float($value)) {
@@ -17,7 +17,7 @@ if (!function_exists('s')) {
 		} elseif (is_bool($value)) {
 
 		} else {
-			$inst = new Sclr\String($value);
+			$inst = new Sclr\SclrString($value);
 		}
 
 		return $inst;

@@ -11,12 +11,14 @@ class String extends Value {
 
 	public function capitalize()
 	{
-		return ucwords($this->value);
+		$this->value = ucwords($this->value);
+		return $this;
 	}
 
 	public function capitalizeFirst()
 	{
-		return ucfirst($this->value);
+		$this->value = ucfirst($this->value);
+		return $this;
 	}
 
 	public function chars($length = 1)
@@ -26,7 +28,8 @@ class String extends Value {
 
 	public function chop()
 	{
-		return substr($this->value, 0, -1);
+		$this->value = substr($this->value, 0, -1);
+		return $this;
 	}
 
 	public function contains($needle)
@@ -47,12 +50,14 @@ class String extends Value {
 
 	public function lowercase()
 	{
-		return strtolower($this->value);
+		$this->value = strtolower($this->value);
+		return $this;
 	}
 
 	public function reverse()
 	{
-		return strrev($this->value);
+		$this->value = strrev($this->value);
+		return $this;
 	}
 
 	public function startsWith($needle)
@@ -62,7 +67,8 @@ class String extends Value {
 
 	public function uppercase()
 	{
-		return strtoupper($this->value);
+		$this->value = strtoupper($this->value);
+		return $this;
 	}
 
 }

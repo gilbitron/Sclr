@@ -1,6 +1,6 @@
 <?php namespace Sclr;
 
-class String extends Value {
+class SclrString extends SclrValue {
 
 	public function init()
 	{

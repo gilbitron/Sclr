@@ -1,6 +1,6 @@
 <?php namespace Sclr;
 
-class Value {
+class SclrValue {
 
 	protected $value;
 	protected $type;
@@ -38,6 +38,11 @@ class Value {
 	}
 
 	public function __toString()
+	{
+		return (string)$this->value;
+	}
+
+	public function value()
 	{
 		return $this->value;
 	}

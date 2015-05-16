@@ -36,6 +36,7 @@ methods below as you wish.
 ### Strings
 
 Method | Result | Chainable
+------ | ------ | ---------
 `s('hello world')->capitalize()` | `"Hello World"` | Yes
 `s('hello world')->capitalizeFirst()` | `"Hello world"` | Yes
 `s('hello world')->chars()` | `['h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd']` | No

@@ -181,3 +181,8 @@ For array methods you need to use the `value()` method to retrieve the value
 from chainable methods (e.g. `$array = s(['a'])->append('b')->value()`).
 
 Coming soon...
+
+## Credits
+
+Sclr was created by [Gilbert Pellegrom](http://gilbert.pellegrom.me) from [Dev7studios](http://dev7studios.com).
+Released under the MIT license.

@@ -35,6 +35,18 @@ methods below as you wish.
 
 ### Strings
 
+* [capitalize()](#capitalize)
+* [capitalizeFirst()](#capitalizefirst)
+* [chars()](#chars)
+* [chop()](#chop)
+* [contains()](#contains)
+* [endsWith()](#endswith)
+* [length()](#length)
+* [lowercase()](#lowercase)
+* [reverse()](#reverse)
+* [startsWith()](#startswith)
+* [uppercase()](#uppercase)
+
 #### capitalize()
 
 Uppercase the first character of each word in a string.

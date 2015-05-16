@@ -35,23 +35,137 @@ methods below as you wish.
 
 ### Strings
 
-Method | Result | Chainable
------- | ------ | ---------
-`s('hello world')->capitalize()` | `"Hello World"` | Yes
-`s('hello world')->capitalizeFirst()` | `"Hello world"` | Yes
-`s('hello world')->chars()` | `['h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd']` | No
-`s('hello world')->chop()` | `"hello worl"` | Yes
-`s('hello world')->contains('ello')` | `true` | No
-`s('hello world')->endsWith('rld')` | `true` | No
-`s('hello world')->length()` | `11` | No
-`s('HeLlO WoRlD')->lowercase()` | `"hello world"` | Yes
-`s('hello world')->reverse()` | `"dlrow olleh"` | Yes
-`s('hello world')->startsWith('hel')` | `true` | No
-`s('HeLlO WoRlD')->uppercase()` | `"HELLO WORLD"` | Yes
+#### capitalize()
 
-Chainable example:
+Uppercase the first character of each word in a string.
+
+```php
+s('hello world')->capitalize()
+=> "Hello World"
+```
+
+Chainable: Yes
+
+#### capitalizeFirst()
+
+Make a string's first character uppercase.
+
+```php
+s('hello world')->capitalizeFirst()
+=> "Hello world"
+```
+
+Chainable: Yes
+
+#### chars()
+
+Convert a string to an array.
+
+```php
+s('hello world')->chars()
+=> ['h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd']
+```
+
+Chainable: No
+
+#### chop()
+
+Remove the last character from a string.
+
+```php
+s('hello world')->chop()
+=> "hello worl"
+```
+
+Chainable: Yes
+
+#### contains()
+
+Test if the value contains a given string.
+
+```php
+s('hello world')->contains('ello')
+=> true
+```
+
+Chainable: No
+
+#### endsWith()
+
+Test if the value ends with a given string.
+
+```php
+s('hello world')->endsWith('rld')
+=> true
+```
+
+Chainable: No
+
+#### length()
+
+Return the length of a string.
+
+```php
+s('hello world')->length()
+=> 11
+```
+
+Chainable: No
+
+#### lowercase()
+
+Make a string lowercase.
+
+```php
+s('HeLlO WoRlD')->lowercase()
+=> "hello world"
+```
+
+Chainable: Yes
+
+#### reverse()
+
+Reverse a string.
+
+```php
+s('hello world')->reverse()
+=> "dlrow olleh"
+```
+
+Chainable: Yes
+
+#### startsWith()
+
+Test if the value starts with a given string.
+
+```php
+s('hello world')->startsWith('hel')
+=> true
+```
+
+Chainable: No
+
+#### uppercase()
+
+Make a string uppercase.
+
+```php
+s('HeLlO WoRlD')->uppercase()
+=> "HELLO WORLD"
+```
+
+Chainable: Yes
+
+#### Chainable example:
 
 ```php
 $string = s('hello world')->capitalize()->chop()->reverse();
 // $string = "lroW olleH"
 ```
+
+### Arrays
+
+For array methods you need to use the `value()` method to retrieve the value
+from chainable methods (e.g. `$array = s(['a'])->append('b')->value()`).
+
+Coming soon...

@@ -1,6 +1,6 @@
 {
   "name": "gilbitron/sclr",
-  "description": "Adds Ruby-style methods to PHP scalar types",
+  "description": "Supercharge scalar types in PHP",
   "license": "MIT",
   "authors": [
     {
